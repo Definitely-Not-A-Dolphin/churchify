@@ -28,10 +28,10 @@
           owner = "Definitely-Not-A-Dolphin";
           repo = "churchify";
           tag = finalAttrs.version;
-          hash = "sha256-gyWnahj1A+iXUQlQ1O1H1u7K5euYQOld9qWm99Vjaeg=";
+          hash = "sha256-9TcZCTXVOWZ9e6XFs8yaScSnC7vvo/5s//zxPgUk1oY=";
         };
 
-        cargoHash = "sha256-9atn5qyBDy4P6iUoHFhg+TV6Ur71fiah4oTJbBMeEy4=";
+        cargoHash = "sha256-W/4fia2hV9H6qamh23sO+YH5nhdlEsHGHSC6Ovnez7A=";
 
         meta = {
           description = "Encode text Keygen Church-style";

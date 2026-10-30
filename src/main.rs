@@ -14,12 +14,21 @@
 
 fn main() {
     let args = std::env::args().collect::<Vec<_>>();
+
+    if args.len() == 1 {
+        println!("Supply an argument (see help subcommand for more info).");
+        std::process::exit(0);
+    }
+
     let mode = &args[1];
 
     if mode == "help" {
         println!("Usage: \n");
-        println!("\tencode [text] -- to encode text\n");
-        println!("\tdecode [text] -- to attempt to decode text\n");
+        println!("\thelp [text] \t-- see this message\n");
+        println!("\tencode [text] \t-- to encode text\n");
+        println!(
+            "\tdecode [text] \t-- to attempt to decode text (is not garuanteed to perfectly decode)\n"
+        );
 
         std::process::exit(0);
     }
